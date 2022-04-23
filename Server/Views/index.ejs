@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!--CSS Section -->
+    <link  rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3fff498c06.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="/Content/app.css">
+    
+    <!--Scripting Section - Top-->
+</head>
+  <body id="<%= page %>">
+    <!--Main Header-->
+    <header>
+      <%-include('./components/header')-%>
+    </header>
+
+
+    <!--Main Content-->
+    <main class="container">
+      <%-include('./content/' + page)-%>
+
+    </main>
+
+
+    <!--Main Footer-->
+    <footer>
+
+      <%-include('./components/footer')-%>
+
+    </footer>
+
+    <!-- Scripting Section - Bottom -->
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+
+
+</body>
+</html>
